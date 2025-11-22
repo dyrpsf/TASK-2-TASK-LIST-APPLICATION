@@ -66,8 +66,9 @@ Base URL: `http://localhost:3000`
     }
   ]
 }
-Create a task
-POST /api/tasks
+
+# Create a task
+# POST /api/tasks
 
 Body
 
@@ -77,31 +78,31 @@ JSON
   "title": "Finish Android Club assignment",
   "description": "Implement task list with CRUD and API"
 }
-Responses
+# Responses
 
 201 Created – success, returns updated list
 400 Bad Request – if title is missing/empty
-Update a task
-PUT /api/tasks/:id
+# Update a task
+# PUT /api/tasks/:id
 
-You can update any subset of fields.
+# You can update any subset of fields.
 
-Body examples
+# Body examples
 
-Change title/description:
-JSON
+# Change title/description:
+# JSON
 
 {
   "title": "Updated title",
   "description": "Updated description"
 }
-Toggle completion:
-JSON
+# Toggle completion:
+# JSON
 
 {
   "completed": true
 }
-Responses
+# Responses
 
 200 OK – success, returns updated list
 400 Bad Request – invalid data (e.g. empty title)
