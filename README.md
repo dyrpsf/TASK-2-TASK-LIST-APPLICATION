@@ -40,8 +40,6 @@ See API.md for detailed endpoint documentation.
 text
 
 
-### `API.md`
-
 ```markdown
 # Task List API Documentation
 
