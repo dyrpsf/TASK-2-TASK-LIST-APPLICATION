@@ -66,18 +66,20 @@ Base URL: `http://localhost:3000`
     }
   ]
 }
+```
 
 # Create a task
 # POST /api/tasks
 
 Body
 
-JSON
+```JSON
 
 {
   "title": "Finish Android Club assignment",
   "description": "Implement task list with CRUD and API"
 }
+```
 # Responses
 
 201 Created – success, returns updated list
@@ -90,18 +92,20 @@ JSON
 # Body examples
 
 # Change title/description:
-# JSON
+```# JSON
 
 {
   "title": "Updated title",
   "description": "Updated description"
 }
+```
 # Toggle completion:
-# JSON
+```# JSON
 
 {
   "completed": true
 }
+```
 # Responses
 
 200 OK – success, returns updated list
@@ -127,5 +131,3 @@ text
   - A README with setup instructions (template provided).
   - Simple API documentation (template provided).
   - Screenshots of the UI (you’ll take these yourself and add to the repo).
-
-If you want, I can next refactor this into a multi-file structure (e.g., `server.js`, `public/index.html`, `db.js`) or hook it up to a real database like MongoDB/SQLite, but for the Android Club task this setup is enough to submit.
